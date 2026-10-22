@@ -1,8 +1,0 @@
-VERSION REVISADA DEL PROYECTO OLMUE
-
-Se conservan las 11 paginas redisenadas:
-index.html, contacto.html, noticias.html, noticia.html, festival.html, municipalidad.html, departamentos.html, documentos.html, medio-ambiente.html, tramites.html, turismo.html.
-
-Se retiro tramite.html (plantilla antigua). Los accesos de Home a tramites ahora enlazan a tramites.html?tramite=ID, mostrando la ficha correspondiente ya desplegada.
-
-Los contenidos provisorios y enlaces pendientes de URL oficial siguen identificados como tales.

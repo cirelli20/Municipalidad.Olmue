@@ -4,7 +4,11 @@
 .news-page{background:#fff}
 .news-page .news-filters,.news-detail-page main,.news-detail-page .news-article{background:#fff}
 .news-page .nav-group[data-menu="noticias"]>.nav-trigger{font-weight:600}
-.news-page .nav-group[data-menu="noticias"]>.nav-trigger::after{content:"";position:absolute;bottom:22px;left:0;right:0;height:2px;background:#fff;pointer-events:none}
+/* La línea de sección activa pertenece únicamente al menú horizontal de escritorio.
+   En el menú de celular se superponía al texto de «Noticias y Festival». */
+@media (min-width:761px){
+  .news-page .nav-group[data-menu="noticias"]>.nav-trigger::after{content:"";position:absolute;bottom:22px;left:0;right:0;height:2px;background:#fff;pointer-events:none}
+}
 .news-page .visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 .news-breadcrumb{background:var(--soft)}
 .news-breadcrumb .breadcrumb-inner{min-height:52px;display:flex;gap:11px;align-items:center;font-size:12px;color:#5b7067}
