@@ -1,99 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Documentos y formularios municipales de Olmué: encuentra y descarga archivos organizados por categoría.">
-  <title>Documentos · Municipalidad de Olmué</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/home.css">
-  <link rel="stylesheet" href="assets/documentos.css">
-<link rel="stylesheet" href="assets/mobile.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Documentos y formularios municipales de Olmué: encuentra y descarga archivos organizados por categoría." name="description"/>
+<title>Documentos · Municipalidad de Olmué</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+
+<link href="styles.css" rel="stylesheet"/></head>
 <body class="docs-page" data-page="documentos" id="inicio">
-  <a class="skip-link" href="#docs-main">Saltar al contenido</a>
-  <div id="site-shell-header"></div>
-
-  <main id="docs-main">
-    <section class="docs-hero" aria-labelledby="docs-title">
-      <div class="docs-container">
-        <nav class="docs-breadcrumb" aria-label="Ruta de navegación">
-          <a href="index.html">Inicio</a><span aria-hidden="true">/</span><strong aria-current="page">Documentos</strong>
-        </nav>
-        <p class="docs-eyebrow">MUNICIPALIDAD DE OLMUÉ</p>
-        <h1 id="docs-title">Documentos</h1>
-        <p class="docs-description">Encuentra formularios y documentos municipales en un solo lugar. Busca por nombre o explora las categorías para descargar el archivo que necesitas.</p>
-      </div>
-    </section>
-
-    <section class="docs-catalog" aria-labelledby="docs-search-label">
-      <div class="docs-container">
-        <form id="docs-form" class="docs-form" role="search">
-          <label for="docs-query" id="docs-search-label">Buscar un documento</label>
-          <div class="docs-search-row">
-            <div class="docs-input-wrap">
-              <img src="assets/icons/buscar.svg" alt="" aria-hidden="true">
-              <input id="docs-query" type="search" placeholder="Escribe el nombre o una palabra clave" autocomplete="off">
-            </div>
-            <button class="docs-search-button" type="submit">Buscar <img src="assets/icons/buscar.svg" alt="" aria-hidden="true"></button>
-          </div>
-        </form>
-
-        <p class="docs-disclaimer"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 10.5v5.5M12 7.5v.2"/></svg> Catálogo de ejemplo: los títulos y formatos son ilustrativos y no corresponden a archivos oficiales disponibles.</p>
-
-        <div class="docs-layout">
-          <aside class="docs-sidebar" aria-labelledby="docs-categories-label">
-            <h2 id="docs-categories-label">Categorías</h2>
-            <div id="docs-categories" class="docs-categories" role="group" aria-label="Filtrar por categoría"></div>
-            <div class="docs-download-info">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M4 16v4h16v-4"/></svg>
-              <h3>Descarga directa</h3>
-              <p>Cada botón Descargar corresponde a un archivo, sin páginas intermedias.</p>
-              <p>Revisa el formato antes de descargar. Los archivos KML se abren con un visor de mapas.</p>
-            </div>
-          </aside>
-
-          <div class="docs-results">
-            <div class="docs-results-head">
-              <h2 id="docs-results-title">Todos los documentos</h2>
-              <span id="docs-count" aria-live="polite">9 archivos de ejemplo</span>
-            </div>
-            <div id="docs-groups"></div>
-            <div id="docs-empty" class="docs-empty" hidden>
-              <h3>No encontramos documentos con esa búsqueda</h3>
-              <p>Prueba con otra palabra clave o consulta todas las categorías.</p>
-              <button id="docs-reset" type="button">Mostrar todos los documentos</button>
-            </div>
-            <p class="docs-results-foot" id="docs-footnote">Se muestran todos los archivos del catálogo de ejemplo.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="docs-orient" aria-labelledby="docs-orient-title">
-      <div class="docs-container">
-        <div class="docs-orient-head">
-          <div>
-            <h2 id="docs-orient-title">Estamos para orientarte</h2>
-            <p>¿Necesitas ayuda para encontrar un documento? Comunícate por nuestros canales oficiales.</p>
-          </div>
-          <a href="contacto.html" class="docs-contact-link">Ir a Contacto <img src="assets/icons/flecha-derecha.svg" alt="" aria-hidden="true"></a>
-        </div>
-        <div class="docs-contact-panel">
-          <div><img src="assets/icons/telefono.svg" alt="" aria-hidden="true"><h3>Teléfono municipal</h3><a href="tel:+56443579530">+56 44 357 9530</a></div>
-          <div><img src="assets/icons/correo.svg" alt="" aria-hidden="true"><h3>Oficina de partes</h3><a href="mailto:oficinadepartes@olmue.cl">oficinadepartes@olmue.cl</a></div>
-          <div><img src="assets/icons/ubicacion.svg" alt="" aria-hidden="true"><h3>Dirección</h3><p>Prat #12, Olmué, 5ta Región</p></div>
-          <div><img src="assets/icons/horario.svg" alt="" aria-hidden="true"><h3>Horario de atención</h3><p>Lunes a Jueves de 08:30 a 17:30 y<br>Viernes de 08:30 a 16:30</p></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div id="site-shell-footer"></div>
-  <script src="assets/shared-layout.js"></script>
-  <script src="assets/documentos-data.js"></script>
-  <script src="assets/documentos.js"></script>
+<a class="skip-link" href="#docs-main">Saltar al contenido</a>
+<div id="site-shell-header"></div>
+<main id="docs-main">
+<section aria-labelledby="docs-title" class="docs-hero">
+<div class="docs-container">
+<nav aria-label="Ruta de navegación" class="docs-breadcrumb">
+<a href="index.html">Inicio</a><span aria-hidden="true">/</span><strong aria-current="page">Documentos</strong>
+</nav>
+<p class="docs-eyebrow">MUNICIPALIDAD DE OLMUÉ</p>
+<h1 id="docs-title">Documentos</h1>
+<p class="docs-description">Encuentra formularios y documentos municipales en un solo lugar. Busca por nombre o explora las categorías para descargar el archivo que necesitas.</p>
+</div>
+</section>
+<section aria-labelledby="docs-search-label" class="docs-catalog">
+<div class="docs-container">
+<form class="docs-form" id="docs-form" role="search">
+<label for="docs-query" id="docs-search-label">Buscar un documento</label>
+<div class="docs-search-row">
+<div class="docs-input-wrap">
+<img alt="" aria-hidden="true" src="assets/icons/buscar.svg"/>
+<input autocomplete="off" id="docs-query" placeholder="Escribe el nombre o una palabra clave" type="search"/>
+</div>
+<button class="docs-search-button" type="submit">Buscar <img alt="" aria-hidden="true" src="assets/icons/buscar.svg"/></button>
+</div>
+</form>
+<p class="docs-disclaimer"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 10.5v5.5M12 7.5v.2"></path></svg> Catálogo de ejemplo: los títulos y formatos son ilustrativos y no corresponden a archivos oficiales disponibles.</p>
+<div class="docs-layout">
+<aside aria-labelledby="docs-categories-label" class="docs-sidebar">
+<h2 id="docs-categories-label">Categorías</h2>
+<div aria-label="Filtrar por categoría" class="docs-categories" id="docs-categories" role="group"></div>
+<div class="docs-download-info">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M4 16v4h16v-4"></path></svg>
+<h3>Descarga directa</h3>
+<p>Cada botón Descargar corresponde a un archivo, sin páginas intermedias.</p>
+<p>Revisa el formato antes de descargar. Los archivos KML se abren con un visor de mapas.</p>
+</div>
+</aside>
+<div class="docs-results">
+<div class="docs-results-head">
+<h2 id="docs-results-title">Todos los documentos</h2>
+<span aria-live="polite" id="docs-count">9 archivos de ejemplo</span>
+</div>
+<div id="docs-groups"></div>
+<div class="docs-empty" hidden="" id="docs-empty">
+<h3>No encontramos documentos con esa búsqueda</h3>
+<p>Prueba con otra palabra clave o consulta todas las categorías.</p>
+<button id="docs-reset" type="button">Mostrar todos los documentos</button>
+</div>
+<p class="docs-results-foot" id="docs-footnote">Se muestran todos los archivos del catálogo de ejemplo.</p>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="docs-orient-title" class="docs-orient">
+<div class="docs-container">
+<div class="docs-orient-head">
+<div>
+<h2 id="docs-orient-title">Estamos para orientarte</h2>
+<p>¿Necesitas ayuda para encontrar un documento? Comunícate por nuestros canales oficiales.</p>
+</div>
+<a class="docs-contact-link" href="contacto.html">Ir a Contacto <img alt="" aria-hidden="true" src="assets/icons/flecha-derecha.svg"/></a>
+</div>
+<div class="docs-contact-panel">
+<div><img alt="" aria-hidden="true" src="assets/icons/telefono.svg"/><h3>Teléfono municipal</h3><a href="tel:+56443579530">+56 44 357 9530</a></div>
+<div><img alt="" aria-hidden="true" src="assets/icons/correo.svg"/><h3>Oficina de partes</h3><a href="mailto:oficinadepartes@olmue.cl">oficinadepartes@olmue.cl</a></div>
+<div><img alt="" aria-hidden="true" src="assets/icons/ubicacion.svg"/><h3>Dirección</h3><p>Prat #12, Olmué, 5ta Región</p></div>
+<div><img alt="" aria-hidden="true" src="assets/icons/horario.svg"/><h3>Horario de atención</h3><p>Lunes a Jueves de 08:30 a 17:30 y<br/>Viernes de 08:30 a 16:30</p></div>
+</div>
+</div>
+</section>
+</main>
+<div id="site-shell-footer"></div>
+<script src="assets/shared-layout.js"></script>
+<script src="assets/documentos-data.js"></script>
+<script src="assets/documentos.js"></script>
 </body>
 </html>

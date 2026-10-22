@@ -6,9 +6,9 @@
   // Galería informativa: solo las flechas cambian de imagen.
   // La imagen y el texto no funcionan como enlaces.
   const slides = [
-    { image: 'assets/images/galeria-festival.jpg', alt: 'Imagen provisoria del aniversario de Olmué y el Festival del Huaso', label: '' },
-    { image: 'assets/images/galeria-municipio.jpg', alt: 'Imagen provisoria de la municipalidad', label: 'Conoce tu Municipalidad' },
-    { image: 'assets/images/galeria-turismo.jpg', alt: 'Imagen provisoria de un paisaje de Olmué', label: 'Descubre Olmué' }
+    { image: 'assets/images/galeria-festival.webp', alt: 'Imagen provisoria del aniversario de Olmué y el Festival del Huaso', label: '' },
+    { image: 'assets/images/galeria-municipio.webp', alt: 'Imagen provisoria de la municipalidad', label: 'Conoce tu Municipalidad' },
+    { image: 'assets/images/galeria-turismo.webp', alt: 'Imagen provisoria de un paisaje de Olmué', label: 'Descubre Olmué' }
   ];
   let current = 0;
   const slideImg = $('#slide-image');

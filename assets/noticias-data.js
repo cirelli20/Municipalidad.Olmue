@@ -42,7 +42,7 @@
   window.olmueNews = items.map(([category,date,title,summary], id) => ({
     id,category,date,title,
     summary: summary || 'Publicación ilustrativa para visualizar el diseño de la sección de Noticias de la Municipalidad de Olmué.',
-    image:`assets/images/news/noticia-${String((id%9)+1).padStart(2,'0')}.jpg`,
+    image:`assets/images/news/noticia-${String((id%9)+1).padStart(2,'0')}.webp`,
     example:true
   }));
 })();

@@ -1,6 +1,6 @@
 (()=>{
  'use strict';
- const slides=[['images/13-anos.jpg','Imagen conmemorativa de Olmué'],['assets/images/galeria-municipio.jpg','Edificio municipal de Olmué'],['assets/images/galeria-festival.jpg','Imagen del Festival del Huaso de Olmué']];
+ const slides=[['assets/images/galeria-turismo.webp','Imagen conmemorativa de Olmué'],['assets/images/galeria-municipio.webp','Edificio municipal de Olmué'],['assets/images/galeria-festival.webp','Imagen del Festival del Huaso de Olmué']];
  let current=0;
  const img=document.querySelector('#muni-slide-img');
  const status=document.querySelector('#muni-slide-status');

@@ -17,7 +17,7 @@
     return `<article class="news-list-card">
       <img class="news-card-cover" src="${item.image}" alt="Imagen ilustrativa de la noticia: ${item.title}" loading="${related?'lazy':item.id<3?'eager':'lazy'}">
       <div class="news-card-content">${metadata}<h3 class="news-card-title">${item.title}</h3>
-      <a class="news-card-action" href="noticia.html?id=${item.id}" aria-label="Más información sobre: ${item.title}"><span>Más información</span><img src="${arrow}" alt=""></a></div></article>`;
+      <a class="news-card-action" href="noticia.html?id=${item.id}" aria-label="Más información sobre: ${item.title}"><span>Más información</span><img loading="lazy" decoding="async" src="${arrow}" alt=""></a></div></article>`;
   }
   if(path==='noticias.html'){
     const PER_PAGE=9;
@@ -117,9 +117,9 @@
       <div class="news-article-meta"><span class="news-article-pill">${item.category==='Cultura'?'Cultura y comunidad':item.category}</span><span>${formatDate(item.date)}</span><span class="meta-bar">|</span><span>3 min de lectura</span></div>
       <h1 class="news-article-title">${item.title}</h1>
       <p class="news-article-lead">${suppliedSummary ? escapeHTML(item.summary) : 'Información completa pendiente de incorporación.'}</p>
-      <figure class="news-article-photo"><img src="${item.image}" alt="Fotografía ilustrativa asociada a ${item.title}"><figcaption>Imagen ilustrativa · Fotografía ilustrativa; pendiente de sustitución por imagen de la publicación.</figcaption></figure>
+      <figure class="news-article-photo"><img loading="lazy" decoding="async" src="${item.image}" alt="Fotografía ilustrativa asociada a ${item.title}"><figcaption>Imagen ilustrativa · Fotografía ilustrativa; pendiente de sustitución por imagen de la publicación.</figcaption></figure>
       <div class="news-article-content-grid"><div class="news-article-copy">${copy}
-        <div class="news-article-callout"><strong>Sigue la vida cultural de nuestra comuna</strong><p>Encuentra novedades y actividades en los canales oficiales del municipio.</p><a href="noticias.html">Ir a Noticias <img src="${arrow}" alt=""></a></div>
+        <div class="news-article-callout"><strong>Sigue la vida cultural de nuestra comuna</strong><p>Encuentra novedades y actividades en los canales oficiales del municipio.</p><a href="noticias.html">Ir a Noticias <img loading="lazy" decoding="async" src="${arrow}" alt=""></a></div>
       </div><aside class="news-article-share" aria-label="Compartir noticia"><h2>Comparte esta noticia</h2>
         <a href="${facebook}" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M14.5 20V12h2.7l.4-3h-3.1V7.1c0-.9.25-1.5 1.55-1.5H18V2.9c-.35-.05-1.55-.15-2.95-.15-2.9 0-4.9 1.75-4.9 4.95V9H7.5v3h2.65v8h4.35Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Facebook</a>
         <a href="${whatsapp}" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4.1A8 8 0 1 1 20 11.6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>WhatsApp</a>

@@ -1,109 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Directorio de trámites y servicios de la Municipalidad de Olmué.">
-  <title>Trámites y Servicios · Municipalidad de Olmué</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="assets/home.css" rel="stylesheet">
-  <link href="assets/tramites.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/mobile.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Directorio de trámites y servicios de la Municipalidad de Olmué." name="description"/>
+<title>Trámites y Servicios · Municipalidad de Olmué</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+
+<link href="styles.css" rel="stylesheet"/></head>
 <body class="tramites-page" data-page="tramites" id="inicio">
-  <a class="skip-link" href="#tramites-main">Saltar al contenido</a>
-  <div id="site-shell-header"></div>
-
-  <main id="tramites-main">
-    <section class="tramites-hero" aria-labelledby="tramites-title">
-      <div class="tramites-container">
-        <nav class="tramites-breadcrumb" aria-label="Ruta de navegación">
-          <a href="index.html">Inicio</a><span aria-hidden="true">›</span><strong aria-current="page">Trámites y servicios</strong>
-        </nav>
-        <h1 id="tramites-title">Trámites y Servicios</h1>
-        <p class="tramites-lead">Encuentra lo que necesitas y conoce cómo dar el siguiente paso con la Municipalidad de Olmué.</p>
-        <p class="tramites-prompt">¿Qué trámite o servicio necesitas?</p>
-        <form class="tramites-search" id="tramites-search-form">
-          <div class="tramites-search-wrap">
-            <input id="tramites-query" type="search" placeholder="Ej.: licencia de conducir" aria-label="Buscar trámite o servicio">
-          </div>
-          <button type="submit">Buscar</button>
-        </form>
-        <p class="tramites-search-note">Busca por nombre o explora las categorías del directorio.</p>
-      </div>
-    </section>
-
-    <section class="tramites-directory" aria-labelledby="tramites-directory-title">
-      <div class="tramites-container">
-        <h2 id="tramites-directory-title">Encuentra tu trámite</h2>
-        <p class="tramites-directory-intro">Selecciona una categoría y consulta la información que necesitas antes de comenzar.</p>
-
-        <div class="tramites-layout">
-          <aside>
-            <div class="tramites-side-card">
-              <span class="tramites-side-title">Categorías</span>
-              <div id="tramites-filters"></div>
-            </div>
-            <div class="tramites-help">
-              <img src="assets/icons/correo.svg" alt="" aria-hidden="true">
-              <h3>¿No encuentras lo que buscas?</h3>
-              <p>Comunícate con el municipio para saber a qué área dirigir tu consulta.</p>
-              <a href="contacto.html">Ver atención municipal <span aria-hidden="true">→</span></a>
-            </div>
-          </aside>
-
-          <div>
-            <div class="tramites-results-head">
-              <h3 id="tramites-results-title">Todos los trámites y servicios</h3>
-              <span class="tramites-results-count" id="tramites-results-count">0 resultados</span>
-            </div>
-            <div class="tramites-list" id="tramites-list"></div>
-            <div class="tramites-empty" id="tramites-empty" hidden>No encontramos coincidencias con tu búsqueda. Prueba con otra palabra clave o revisa una categoría distinta.</div>
-            <p class="tramites-warning"><img src="assets/icons/identificacion.svg" alt="" aria-hidden="true"><span>Antes de realizar un trámite, confirma con el municipio sus requisitos, costos y modalidad de atención.</span></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="tramites-contact" aria-labelledby="tramites-contact-title">
-      <div class="tramites-container">
-        <div class="tramites-contact-head">
-          <div>
-            <p class="tramites-contact-label">ESTAMOS PARA ORIENTARTE</p>
-            <h2 id="tramites-contact-title">Atención municipal</h2>
-          </div>
-          <p>Si necesitas atención para un trámite específico, confirma su horario y los antecedentes que debes llevar antes de visitar el municipio.</p>
-        </div>
-        <div class="tramites-contact-cards">
-          <article class="tramites-contact-card">
-            <img src="assets/icons/telefono.svg" alt="" aria-hidden="true">
-            <strong>Consulta al municipio</strong>
-            <div class="tramites-contact-main">+56 44 357 9530</div>
-            <div class="tramites-contact-sub">oficinadepartes@olmue.cl</div>
-          </article>
-          <article class="tramites-contact-card">
-            <img src="assets/icons/ubicacion.svg" alt="" aria-hidden="true">
-            <strong>Visita la municipalidad</strong>
-            <div class="tramites-contact-main">Prat #12, Olmué, 5ta Región</div>
-            <div class="tramites-contact-sub">Consulta el área que corresponde a tu trámite.</div>
-          </article>
-          <article class="tramites-contact-card">
-            <img src="assets/icons/horario.svg" alt="" aria-hidden="true">
-            <strong>Horario municipal</strong>
-            <div class="tramites-contact-main">Lunes a Jueves de 08:30 a 17:30 y Viernes de 08:30 a 16:30</div>
-            <div class="tramites-contact-sub">Confirma la atención del servicio que necesitas.</div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div id="site-shell-footer"></div>
-
-  <script src="assets/shared-layout.js"></script>
-  <script src="assets/tramites-data.js"></script>
-  <script src="assets/tramites.js"></script>
+<a class="skip-link" href="#tramites-main">Saltar al contenido</a>
+<div id="site-shell-header"></div>
+<main id="tramites-main">
+<section aria-labelledby="tramites-title" class="tramites-hero">
+<div class="tramites-container">
+<nav aria-label="Ruta de navegación" class="tramites-breadcrumb">
+<a href="index.html">Inicio</a><span aria-hidden="true">›</span><strong aria-current="page">Trámites y servicios</strong>
+</nav>
+<h1 id="tramites-title">Trámites y Servicios</h1>
+<p class="tramites-lead">Encuentra lo que necesitas y conoce cómo dar el siguiente paso con la Municipalidad de Olmué.</p>
+<p class="tramites-prompt">¿Qué trámite o servicio necesitas?</p>
+<form class="tramites-search" id="tramites-search-form">
+<div class="tramites-search-wrap">
+<input aria-label="Buscar trámite o servicio" id="tramites-query" placeholder="Ej.: licencia de conducir" type="search"/>
+</div>
+<button type="submit">Buscar</button>
+</form>
+<p class="tramites-search-note">Busca por nombre o explora las categorías del directorio.</p>
+</div>
+</section>
+<section aria-labelledby="tramites-directory-title" class="tramites-directory">
+<div class="tramites-container">
+<h2 id="tramites-directory-title">Encuentra tu trámite</h2>
+<p class="tramites-directory-intro">Selecciona una categoría y consulta la información que necesitas antes de comenzar.</p>
+<div class="tramites-layout">
+<aside>
+<div class="tramites-side-card">
+<span class="tramites-side-title">Categorías</span>
+<div id="tramites-filters"></div>
+</div>
+<div class="tramites-help">
+<img alt="" aria-hidden="true" src="assets/icons/correo.svg"/>
+<h3>¿No encuentras lo que buscas?</h3>
+<p>Comunícate con el municipio para saber a qué área dirigir tu consulta.</p>
+<a href="contacto.html">Ver atención municipal <span aria-hidden="true">→</span></a>
+</div>
+</aside>
+<div>
+<div class="tramites-results-head">
+<h3 id="tramites-results-title">Todos los trámites y servicios</h3>
+<span class="tramites-results-count" id="tramites-results-count">0 resultados</span>
+</div>
+<div class="tramites-list" id="tramites-list"></div>
+<div class="tramites-empty" hidden="" id="tramites-empty">No encontramos coincidencias con tu búsqueda. Prueba con otra palabra clave o revisa una categoría distinta.</div>
+<p class="tramites-warning"><img alt="" aria-hidden="true" src="assets/icons/identificacion.svg"/><span>Antes de realizar un trámite, confirma con el municipio sus requisitos, costos y modalidad de atención.</span></p>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="tramites-contact-title" class="tramites-contact">
+<div class="tramites-container">
+<div class="tramites-contact-head">
+<div>
+<p class="tramites-contact-label">ESTAMOS PARA ORIENTARTE</p>
+<h2 id="tramites-contact-title">Atención municipal</h2>
+</div>
+<p>Si necesitas atención para un trámite específico, confirma su horario y los antecedentes que debes llevar antes de visitar el municipio.</p>
+</div>
+<div class="tramites-contact-cards">
+<article class="tramites-contact-card">
+<img alt="" aria-hidden="true" src="assets/icons/telefono.svg"/>
+<strong>Consulta al municipio</strong>
+<div class="tramites-contact-main">+56 44 357 9530</div>
+<div class="tramites-contact-sub">oficinadepartes@olmue.cl</div>
+</article>
+<article class="tramites-contact-card">
+<img alt="" aria-hidden="true" src="assets/icons/ubicacion.svg"/>
+<strong>Visita la municipalidad</strong>
+<div class="tramites-contact-main">Prat #12, Olmué, 5ta Región</div>
+<div class="tramites-contact-sub">Consulta el área que corresponde a tu trámite.</div>
+</article>
+<article class="tramites-contact-card">
+<img alt="" aria-hidden="true" src="assets/icons/horario.svg"/>
+<strong>Horario municipal</strong>
+<div class="tramites-contact-main">Lunes a Jueves de 08:30 a 17:30 y Viernes de 08:30 a 16:30</div>
+<div class="tramites-contact-sub">Confirma la atención del servicio que necesitas.</div>
+</article>
+</div>
+</div>
+</section>
+</main>
+<div id="site-shell-footer"></div>
+<script src="assets/shared-layout.js"></script>
+<script src="assets/tramites-data.js"></script>
+<script src="assets/tramites.js"></script>
 </body>
 </html>

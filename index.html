@@ -9,15 +9,12 @@
 <title>Inicio · Municipalidad de Olmué</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="assets/home.css" rel="stylesheet"/>
+
 <script defer="" src="assets/shared-layout.js"></script><script defer="" src="assets/home.js"></script>
-<link rel="stylesheet" href="assets/mobile.css">
-</head>
+<link href="styles.css" rel="stylesheet"/></head>
 <body id="inicio">
 <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 <div id="site-shell-header"></div>
-
 <main id="contenido">
 <section aria-label="Portal ciudadano y destacados" class="intro">
 <div class="intro-container">
@@ -47,7 +44,7 @@
 </div>
 <div aria-label="Actividades e información destacada de Olmué" aria-roledescription="carrusel" class="slider" role="region">
 <div class="slide-content">
-<img alt="Imagen destacada de Olmué, aniversario de la comuna" class="slide-image" id="slide-image" src="assets/images/galeria-festival.jpg"/>
+<img alt="Imagen destacada de Olmué, aniversario de la comuna" class="slide-image" decoding="async" fetchpriority="high" height="510" id="slide-image" src="assets/images/galeria-festival.webp" width="1801"/>
 <span class="slide-caption" hidden="" id="slide-caption"></span>
 </div>
 <button aria-label="Imagen anterior" class="slider-arrow prev" id="slide-prev" type="button"><span aria-hidden="true">‹</span></button>
@@ -58,10 +55,10 @@
 <section aria-labelledby="news-title" class="news-section container">
 <h2 class="section-heading" id="news-title">Noticias Destacadas</h2>
 <div class="news-grid">
-<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=0"><h3>¡Olmué tiene talento joven!</h3><img alt="Imagen provisoria de un edificio municipal" src="assets/images/noticia-municipio.jpg"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
-<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=1"><h3>CONCIERTO “Ensamble temporia”<br/>Por Orquesta infantil juvenil de la Cruz.</h3><img alt="Imagen provisoria de un edificio municipal" src="assets/images/noticia-municipio-1.jpg"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
-<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=2"><h3>¡Llega la tercera EXPO ECOFERIA reserva de la Biósfera Olmué 2026!”<br/></h3><img alt="Imagen provisoria de un edificio municipal" src="assets/images/noticia-municipio-2.jpg"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
-<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=3"><h3>Se dan a conocer las bases del<br/> LVI festival del huaso de Olmué 2027</h3><img alt="Imagen provisoria de un edificio municipal" src="assets/images/noticia-municipio-3.jpg"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
+<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=0"><h3>¡Olmué tiene talento joven!</h3><img alt="Imagen provisoria de un edificio municipal" decoding="async" height="768" loading="lazy" src="assets/images/noticia-municipio.webp" width="1376"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
+<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=1"><h3>CONCIERTO “Ensamble temporia”<br/>Por Orquesta infantil juvenil de la Cruz.</h3><img alt="Imagen provisoria de un edificio municipal" decoding="async" height="335" loading="lazy" src="assets/images/noticia-municipio-1.webp" width="596"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
+<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=2"><h3>¡Llega la tercera EXPO ECOFERIA reserva de la Biósfera Olmué 2026!”<br/></h3><img alt="Imagen provisoria de un edificio municipal" decoding="async" height="768" loading="lazy" src="assets/images/noticia-municipio-2.webp" width="1376"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
+<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=3"><h3>Se dan a conocer las bases del<br/> LVI festival del huaso de Olmué 2027</h3><img alt="Imagen provisoria de un edificio municipal" decoding="async" height="349" loading="lazy" src="assets/images/noticia-municipio-3.webp" width="620"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
 </div>
 <a class="more-news" href="noticias.html"><span>Ver más noticias</span><img alt="" src="assets/icons/flecha-derecha.svg"/></a>
 </section>
@@ -75,7 +72,7 @@
 </div>
 </div>
 <div class="banner-actions">
-<a href="https://www.portaltransparencia.cl/PortalPdT/pdtta?codOrganismo=MU190" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" target="_blank">Ley de Transparencia <svg aria-hidden="true" fill="none" focusable="false" viewbox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></a>
+<a href="https://www.portaltransparencia.cl/PortalPdT/pdtta?codOrganismo=MU190" rel="noopener noreferrer" target="_blank">Ley de Transparencia <svg aria-hidden="true" fill="none" focusable="false" viewbox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></a>
 <a href="municipalidad.html" rel="noopener noreferrer" target="_blank">Más información <svg aria-hidden="true" fill="none" focusable="false" viewbox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></a>
 </div>
 </section>
