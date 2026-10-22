@@ -1,0 +1,125 @@
+.tramites-page{background:#f7f7f4;color:#27362f;font-family:Roboto,Arial,sans-serif}
+.tramites-page .tramites-container{width:min(1110px,calc(100% - 80px));margin:0 auto}
+.tramites-page .tramites-hero{background:#eaf1eb;padding:18px 0 22px}
+.tramites-page .tramites-breadcrumb{display:flex;gap:13px;align-items:center;margin-bottom:10px;color:#6d7e75;font-size:12px}
+.tramites-page .tramites-breadcrumb a{color:#6d7e75;text-decoration:none}.tramites-page .tramites-breadcrumb a:hover{text-decoration:underline}
+.tramites-page .tramites-breadcrumb strong{color:#395448}
+.tramites-page .tramites-hero h1{font:700 42px/1.12 Roboto,Arial,sans-serif;margin:0 0 11px;color:#26352e}
+.tramites-page .tramites-lead{font-size:16px;line-height:1.45;color:#5b6c62;margin:0 0 12px;max-width:680px}
+.tramites-page .tramites-prompt{font-size:14px;line-height:1.4;font-weight:700;color:#446357;margin:0 0 8px}
+.tramites-page .tramites-search{display:flex;gap:12px;align-items:center}
+.tramites-page .tramites-search-wrap{position:relative;flex:1}
+.tramites-page .tramites-search-wrap::before{content:'';position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;background:url('icons/buscar.svg') center/contain no-repeat;opacity:.8}
+.tramites-page .tramites-search input{width:100%;height:44px;border:1px solid #d5ddd6;border-radius:7px;padding:0 14px 0 42px;font:400 14px Roboto,Arial,sans-serif;color:#33453b;background:#fff}
+.tramites-page .tramites-search button{border:0;border-radius:6px;background:#1d5b48;color:#fff;min-width:100px;height:44px;padding:0 18px;font:500 14px Roboto,Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;transition:transform .3s ease,opacity .3s ease}
+.tramites-page .tramites-search button::after{content:'';width:17px;height:17px;background:url('icons/buscar.svg') center/contain no-repeat;filter:brightness(0) invert(1)}
+.tramites-page .tramites-search button:hover,.tramites-page .tramites-search button:focus-visible{transform:scale(1.04);opacity:.86}
+.tramites-page .tramites-search-note{font-size:12px;line-height:1.4;color:#7a877f;margin:9px 0 0}
+.tramites-page .tramites-directory{padding:30px 0 34px}
+.tramites-page .tramites-directory h2{font:700 31px/1.2 Roboto,Arial,sans-serif;color:#26352e;margin:0 0 10px}
+.tramites-page .tramites-directory h2::after{content:'';display:block;width:64px;height:4px;background:#4a82c3;margin-top:10px}
+.tramites-page .tramites-directory .tramites-directory-intro{font-size:14px;color:#76827a;margin:0 0 20px}
+.tramites-page .tramites-layout{display:grid;grid-template-columns:232px minmax(0,1fr);gap:20px;align-items:start}
+.tramites-page .tramites-side-card{background:#eff3ec;border:1px solid #dde5de;border-radius:11px;padding:12px}
+.tramites-page .tramites-side-title{display:block;font-size:15px;line-height:1.3;font-weight:700;color:#33463c;margin-bottom:10px}
+.tramites-page .tramites-filter{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;border:0;background:transparent;color:#4a5c53;border-radius:8px;padding:10px 10px;cursor:pointer;font:400 13px Roboto,Arial,sans-serif;transition:background-color .25s ease,color .25s ease}
+.tramites-page .tramites-filter:hover,.tramites-page .tramites-filter:focus-visible{background:#e4ede0}
+.tramites-page .tramites-filter.is-active{background:#dfead6;font-weight:700;color:#355145}
+.tramites-page .tramites-filter-left{display:flex;align-items:center;gap:10px}
+.tramites-page .tramites-filter-left img{width:16px;height:16px;object-fit:contain;opacity:.95}
+.tramites-page .tramites-filter-count{font-size:13px;color:#6e7e73}
+.tramites-page .tramites-help{margin-top:14px;background:#edf4ef;border:1px solid #e0e8e1;border-radius:11px;padding:18px 14px}
+.tramites-page .tramites-help img{width:19px;height:19px;margin-bottom:8px}
+.tramites-page .tramites-help h3{font:700 14px/1.35 Roboto,Arial,sans-serif;color:#355145;margin:0 0 7px}
+.tramites-page .tramites-help p{font-size:13px;line-height:1.45;color:#6b7c71;margin:0 0 12px}
+.tramites-page .tramites-help a{font-size:14px;line-height:1.3;font-weight:700;color:#2e614f;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+.tramites-page .tramites-help a:hover{text-decoration:underline}
+.tramites-page .tramites-results-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:12px}
+.tramites-page .tramites-results-head h3{font:700 20px/1.2 Roboto,Arial,sans-serif;color:#33463c;margin:0}
+.tramites-page .tramites-results-count{font-size:12px;color:#77857c}
+.tramites-page .tramites-list{display:flex;flex-direction:column;gap:13px}
+.tramites-page .tramite-card{background:#fff;border:1px solid #dce4dc;border-radius:11px;overflow:hidden;transition:border-color .3s ease,box-shadow .3s ease}
+.tramites-page .tramite-card.is-open{border-color:#cfdacf;box-shadow:0 8px 22px rgba(31,53,39,.06)}
+.tramites-page .tramite-summary{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:16px;align-items:start;padding:16px 18px}
+.tramites-page .tramite-icon{width:36px;height:36px;border-radius:10px;background:#eef4ef;display:grid;place-items:center;margin-top:2px}
+.tramites-page .tramite-icon img{width:20px;height:20px;object-fit:contain}
+.tramites-page .tramite-title{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:3px}
+.tramites-page .tramite-title h4{font:700 16px/1.3 Roboto,Arial,sans-serif;color:#2f4138;margin:0}
+.tramites-page .tramite-tag{display:inline-flex;align-items:center;justify-content:center;background:#edf3ec;color:#5f7b6e;border-radius:999px;padding:4px 10px;font:500 10px/1.2 Roboto,Arial,sans-serif;white-space:nowrap}
+.tramites-page .tramite-description{font-size:14px;line-height:1.45;color:#64736a;margin:0 0 8px}
+.tramites-page .tramite-resumen{font-size:12px;line-height:1.45;color:#7b8880;margin:0}
+.tramites-page .tramite-toggle{align-self:end;border:0;background:transparent;color:#285b4f;font:700 14px/1.2 Roboto,Arial,sans-serif;display:inline-flex;align-items:center;gap:10px;cursor:pointer;padding:8px 0 5px;transition:opacity .25s ease;text-decoration:none}
+.tramites-page .tramite-toggle:hover,.tramites-page .tramite-toggle:focus-visible{opacity:.75;text-decoration:underline;text-underline-offset:4px}
+.tramites-page .tramite-toggle svg{width:16px;height:16px;transition:transform .45s ease}.tramites-page .tramite-card.is-open .tramite-toggle svg{transform:rotate(90deg)}
+.tramites-page .tramite-detail{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .8s cubic-bezier(.25,.65,.25,1),opacity .45s ease,border-top-color .35s ease;border-top:1px solid transparent}
+.tramites-page .tramite-card.is-open .tramite-detail{grid-template-rows:1fr;opacity:1;border-top-color:#e2e8e1}
+.tramites-page .tramite-detail-inner{overflow:hidden;min-height:0;padding:0 18px 0 80px}
+.tramites-page .tramite-detail-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;padding:16px 0 18px}
+.tramites-page .tramite-block h5{font:700 14px/1.35 Roboto,Arial,sans-serif;color:#2c4037;margin:0 0 8px}
+.tramites-page .tramite-block ul,.tramites-page .tramite-block ol{margin:0;padding-left:18px;color:#66776d;font-size:13px;line-height:1.55}
+.tramites-page .tramite-block li+li{margin-top:4px}
+.tramites-page .tramite-meta{display:grid;gap:14px}
+.tramites-page .tramite-meta-item{background:#f4f7f2;border-radius:10px;padding:12px 14px}
+.tramites-page .tramite-meta-item strong{display:block;font-size:12px;color:#5c7266;margin-bottom:4px}
+.tramites-page .tramite-meta-item span{font-size:13px;line-height:1.45;color:#33463c}
+.tramites-page .tramite-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:2px}
+.tramites-page .tramite-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 16px;border-radius:8px;text-decoration:none;font:500 13px Roboto,Arial,sans-serif;transition:transform .3s ease,opacity .3s ease}
+.tramites-page .tramite-actions .tramite-action-primary{background:#1d5b48;color:#fff}
+.tramites-page .tramite-actions .tramite-action-secondary{background:#fff;color:#1d5b48;border:1px solid #cfd9d1}
+.tramites-page .tramite-actions a:hover,.tramites-page .tramite-actions a:focus-visible{transform:scale(1.04);opacity:.86}
+.tramites-page .tramites-empty{padding:28px 20px;border:1px dashed #c9d5ca;border-radius:12px;background:#fbfcfb;text-align:center;color:#6f7f75;font-size:14px}
+.tramites-page .tramites-warning{display:flex;align-items:flex-start;gap:8px;margin-top:14px;font-size:12px;line-height:1.5;color:#69776f}
+.tramites-page .tramites-warning img{width:16px;height:16px;margin-top:1px}
+.tramites-page .tramites-contact{background:#eaf1eb;padding:27px 0 30px;margin-top:34px}
+.tramites-page .tramites-contact-head{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:end;margin-bottom:18px}
+.tramites-page .tramites-contact-label{font-size:11px;line-height:1.3;font-weight:700;color:#5e7a6a;letter-spacing:.02em;margin:0 0 5px}
+.tramites-page .tramites-contact h2{font:700 24px/1.2 Roboto,Arial,sans-serif;color:#27362f;margin:0}
+.tramites-page .tramites-contact p{font-size:14px;line-height:1.45;color:#6f7d75;margin:0}
+.tramites-page .tramites-contact-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.tramites-page .tramites-contact-card{background:#fff;border-radius:10px;padding:18px 18px 16px;border:1px solid #dfe6df}
+.tramites-page .tramites-contact-card img{width:18px;height:18px;object-fit:contain;margin-bottom:10px}
+.tramites-page .tramites-contact-card strong{display:block;font-size:14px;color:#2d4037;margin-bottom:4px}.tramites-page .tramites-contact-card .tramites-contact-main{font:700 14px/1.4 Roboto,Arial,sans-serif;color:#365f50;margin-bottom:4px}.tramites-page .tramites-contact-card .tramites-contact-sub{font-size:12px;line-height:1.45;color:#7b8880}
+@media (max-width: 980px){.tramites-page .tramites-layout{grid-template-columns:1fr}.tramites-page .tramite-detail-grid,.tramites-page .tramites-contact-head,.tramites-page .tramites-contact-cards{grid-template-columns:1fr}.tramites-page .tramite-detail-inner{padding:0 18px}}
+
+/* Tarjetas de trámites: diagramación según los estados cerrado / abierto de Figma. */
+.tramites-page .tramite-card{position:relative;display:flex;flex-direction:column;padding:20px 24px 18px 22px;min-height:154px;border-radius:14px;background:#fff;box-shadow:none;transition:border-color .3s ease,box-shadow .3s ease}
+.tramites-page .tramite-card.is-open{border-color:#d5e0d6;box-shadow:none}
+.tramites-page .tramite-card-heading{display:grid;grid-template-columns:48px minmax(0,1fr) auto;align-items:start;gap:18px}
+.tramites-page .tramite-icon{width:48px;height:48px;border-radius:12px;background:#eaf1eb;display:grid;place-items:center;margin:0;grid-column:1;grid-row:1}
+.tramites-page .tramite-icon img{width:29px;height:29px;object-fit:contain}
+.tramites-page .tramite-card-heading h4{grid-column:2;grid-row:1;font:700 19px/1.3 Roboto,Arial,sans-serif;margin:0;color:#29372f}
+.tramites-page .tramite-card-heading .tramite-tag{grid-column:3;grid-row:1;align-self:start;justify-self:end;border-radius:9px;font:500 12px/1.3 Roboto,Arial,sans-serif;background:#eaf1eb;color:#245748;padding:8px 12px}
+.tramites-page .tramite-closed,.tramites-page .tramite-expanded{display:grid;grid-template-rows:1fr;opacity:1;transition:grid-template-rows .78s cubic-bezier(.22,.66,.24,1),opacity .42s ease}
+.tramites-page .tramite-expanded{grid-template-rows:0fr;opacity:0}
+.tramites-page .tramite-closed-inner,.tramites-page .tramite-expanded-inner{min-height:0;overflow:hidden}
+.tramites-page .tramite-closed-inner{padding:0 180px 0 66px}
+.tramites-page .tramite-description{font:400 15px/1.45 Roboto,Arial,sans-serif;margin:0 0 10px;color:#6a7a70}
+.tramites-page .tramite-resumen{font:400 13px/1.45 Roboto,Arial,sans-serif;margin:0;color:#728077}
+.tramites-page .tramite-card.is-open .tramite-closed{grid-template-rows:0fr;opacity:0}
+.tramites-page .tramite-card.is-open .tramite-expanded{grid-template-rows:1fr;opacity:1}
+.tramites-page .tramite-expanded-content{padding:0 0 17px 66px}
+.tramites-page .tramite-information{padding-top:4px;margin:0 0 36px}
+.tramites-page .tramite-information p{font:400 15px/1.43 Roboto,Arial,sans-serif;color:#64766b;margin:0}
+.tramites-page .tramite-info-heading{margin-bottom:3px!important}
+.tramites-page .tramite-information a{color:inherit;text-decoration:none}
+.tramites-page .tramite-information a.tramite-text-link{text-decoration:underline;text-underline-offset:2px}
+.tramites-page .tramite-prepare{color:#657569;font:400 13px/1.45 Roboto,Arial,sans-serif;margin:0 0 13px}
+.tramites-page .tramite-text-link{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.tramites-page .tramite-downloads{display:flex;align-items:stretch;flex-wrap:wrap;gap:15px;max-width:calc(100% - 110px)}
+.tramites-page .tramite-download{flex:1 1 150px;min-width:142px;max-width:235px;min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:13px;padding:10px 13px;border:1.5px solid #416e9e;border-radius:21px;color:#416e9e;background:#e2ede5;font:500 13px/1.2 Roboto,Arial,sans-serif;text-decoration:none;transition:transform .3s ease,background-color .3s ease,opacity .3s ease}
+.tramites-page .tramite-download strong{display:block;font-weight:700}
+.tramites-page .tramite-download small{display:block;font-size:12px;line-height:1.25;color:#416e9e}
+.tramites-page .tramite-download img{width:23px;height:23px;object-fit:contain;flex:none}
+.tramites-page .tramite-download:hover,.tramites-page .tramite-download:focus-visible{transform:scale(1.045);opacity:.85;background:#d6e8db}
+.tramites-page .tramite-provisional{color:#87958a;font-size:11px;margin:11px 0 0}
+.tramites-page .tramite-toggle{position:absolute;right:22px;bottom:18px;align-self:auto;border:0;background:none;color:#235b49;display:inline-flex;align-items:center;gap:10px;padding:2px 1px;font:700 14px/1.2 Roboto,Arial,sans-serif;text-decoration:none;cursor:pointer;transition:opacity .25s ease}
+.tramites-page .tramite-toggle:hover,.tramites-page .tramite-toggle:focus-visible{opacity:.8;text-decoration:underline;text-underline-offset:4px}
+.tramites-page .tramite-toggle svg{width:20px;height:20px;transition:transform .65s cubic-bezier(.22,.66,.24,1)}
+.tramites-page .tramite-card.is-open .tramite-toggle{font-weight:400}
+.tramites-page .tramite-card.is-open .tramite-toggle svg{transform:rotate(180deg)}
+.tramites-page .tramite-card.is-open{padding-bottom:24px;transition:padding-bottom .5s ease}
+@media(prefers-reduced-motion:reduce){.tramites-page .tramite-closed,.tramites-page .tramite-expanded,.tramites-page .tramite-toggle svg{transition:none}}
+/* Cuatro descargas de la licencia en una misma línea, como en la referencia de Figma. */
+.tramites-page .tramite-downloads{max-width:calc(100% - 84px);gap:12px}
+.tramites-page .tramite-download{flex:1 1 105px;min-width:126px;max-width:222px;padding:10px 11px;gap:8px}
+.tramites-page .tramite-download strong{overflow-wrap:anywhere}

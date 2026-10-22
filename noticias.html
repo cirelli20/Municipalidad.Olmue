@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#006FB3">
+<meta name="description" content="Explora noticias y novedades de la Municipalidad de Olmué.">
+<title>Todas las noticias · Municipalidad de Olmué</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/home.css">
+<link rel="stylesheet" href="assets/noticias.css">
+<script defer src="assets/shared-layout.js"></script>
+<script defer src="assets/noticias-data.js"></script>
+<script defer src="assets/noticias.js"></script>
+<link rel="stylesheet" href="assets/mobile.css">
+</head>
+<body class="news-page" data-news-view="listing" id="inicio">
+<a href="#contenido" class="skip-link">Saltar al contenido</a>
+<div id="site-shell-header"></div>
+<main id="contenido">
+  <nav class="news-breadcrumb" aria-label="Ruta de navegación">
+    <div class="container breadcrumb-inner">
+      <a href="index.html">Inicio</a><img src="assets/icons/chevron-derecha.svg" alt="">
+      <a href="noticias.html">Noticias y Festival</a><img src="assets/icons/chevron-derecha.svg" alt="">
+      <span aria-current="page">Todas las noticias</span>
+    </div>
+  </nav>
+  <section class="news-filters" aria-labelledby="news-page-title">
+    <div class="container">
+      <h1 class="news-page-title" id="news-page-title">Todas las noticias</h1>
+      <p class="news-lead">Conoce las novedades de nuestra comuna. Busca una noticia o explora por tema.</p>
+      <form class="news-query" id="news-search-form" role="search">
+        <label class="visually-hidden" for="news-query-input">Buscar por título o palabra clave</label>
+        <div class="news-query-field"><img src="assets/icons/buscar.svg" alt=""><input id="news-query-input" name="q" type="search" placeholder="Buscar por título o palabra clave" autocomplete="off"></div>
+        <button class="news-query-btn" type="submit">Buscar <img src="assets/icons/buscar.svg" alt=""></button>
+      </form>
+      <div class="news-filter-label">Filtrar por categoría</div>
+      <div class="news-chips" id="news-category-chips" aria-label="Categorías de noticias">
+        <button type="button" class="is-selected" data-category="Todas" aria-pressed="true">Todas</button>
+        <button type="button" data-category="Cultura" aria-pressed="false">Cultura</button>
+        <button type="button" data-category="Comunidad" aria-pressed="false">Comunidad</button>
+        <button type="button" data-category="Medio ambiente" aria-pressed="false">Medio ambiente</button>
+        <button type="button" data-category="Deportes" aria-pressed="false">Deportes</button>
+        <button type="button" data-category="Servicios municipales" aria-pressed="false">Servicios municipales</button>
+      </div>
+    </div>
+  </section>
+  <section class="news-list-section" id="noticias-resultados" aria-label="Listado de noticias">
+    <div class="container">
+      <div class="news-list-toolbar">
+        <div><strong id="news-results-count" role="status" aria-live="polite">Mostrando 1–9 de 36 noticias</strong><p>Publicaciones, fechas y cantidades de ejemplo. Fotografías ilustrativas.</p></div>
+        <label class="news-sort">Ordenar por <span class="news-select-wrap"><select id="news-sort-select" aria-label="Ordenar noticias"><option value="recent">Más recientes</option><option value="old">Más antiguas</option></select><img src="assets/icons/chevron-abajo.svg" alt=""></span></label>
+      </div>
+      <div id="news-cards" class="news-list-grid" aria-live="polite"></div>
+      <p id="news-no-results" class="news-no-results" hidden>No encontramos noticias con esos criterios. Prueba con otra palabra o selecciona «Todas».</p>
+      <div class="news-pagination" id="news-pagination" aria-label="Paginación de noticias">
+        <span id="news-page-counter">Página 1 de 4</span>
+        <div class="news-pages-controls" id="news-pages-controls"></div>
+        <span>9 noticias por página</span>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="site-shell-footer"></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* Medio Ambiente — sólo clases .amb-* para proteger header/footer compartidos */
+.amb-page {background:#f7f7f4;color:#27362f;font-family:Roboto,Arial,sans-serif}
+.amb-page .amb-container{width:min(1110px,calc(100% - 80px));margin:0 auto}
+.amb-page .amb-hero{background:#eaf1eb;padding:20px 0 41px}
+.amb-page .amb-crumb{display:flex;gap:13px;align-items:center;margin-bottom:27px;color:#5d776c;font-size:12px}
+.amb-page .amb-crumb a{color:#567997;text-decoration:none}
+.amb-page .amb-crumb a:hover{text-decoration:underline}
+.amb-page .amb-crumb strong{color:#285b4f;font-weight:700}
+.amb-page .amb-label{font-size:11px;letter-spacing:.01em;color:#487aa3;font-weight:700;margin:0 0 13px}
+.amb-page .amb-hero h1{font:700 42px/1.12 Roboto,Arial,sans-serif;margin:0 0 17px;color:#26372e}
+.amb-page .amb-lead{font-size:21px;line-height:1.36;font-weight:500;color:#355f50;margin:0;max-width:1100px}
+.amb-page .amb-content{background:#f7f7f4;padding:22px 0 35px}
+.amb-page .amb-shortcuts{display:flex;align-items:stretch;justify-content:center;gap:28px;margin:0 auto 67px}
+.amb-page .amb-shortcut{width:194px;height:150px;min-width:194px;border:0;background:#99c555;color:#fff;border-radius:11px;box-shadow:6px 9px 10px #1b2e2440;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;text-align:center;padding:20px 15px;text-decoration:none;font:600 18px/1.18 Roboto,Arial,sans-serif;transition:transform .33s ease,opacity .33s ease,box-shadow .33s ease}
+.amb-page .amb-shortcut img{width:45px;height:45px;object-fit:contain}
+.amb-page .amb-shortcut:hover,.amb-page .amb-shortcut:focus-visible{transform:translateY(-4px) scale(1.045);opacity:.87;box-shadow:8px 13px 14px #1b2e2440}
+.amb-page .amb-articles{max-width:900px}
+.amb-page .amb-article{margin-bottom:70px;scroll-margin-top:38px}
+.amb-page .amb-article h2{font:700 29px/1.2 Roboto,Arial,sans-serif;color:#293830;margin:0 0 12px}
+.amb-page .amb-article h2::after{content:"";display:block;background:#416e9e;width:81px;height:4px;margin-top:12px}
+.amb-page .amb-article p{font-size:14px;line-height:1.5;color:#708078;margin:0 0 23px}
+.amb-page .amb-article p strong{color:#63786c;font-weight:700}
+.amb-page .amb-expand-button{display:inline-flex;align-items:center;gap:19px;border:0;padding:11px 14px 11px 13px;background:transparent;color:#235e4d;font:500 15px/1.2 Roboto,Arial,sans-serif;transition:opacity .22s ease;cursor:pointer}
+.amb-page .amb-expand-button:hover,.amb-page .amb-expand-button:focus-visible{opacity:.7;text-decoration:underline;text-underline-offset:4px}
+.amb-page .amb-expand-button svg{width:19px;height:19px;transition:transform .45s ease}
+.amb-page .amb-expand-button[aria-expanded=true] svg{transform:rotate(180deg)}
+.amb-page .amb-reveal{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .6s cubic-bezier(.25,.65,.25,1),opacity .5s ease}
+.amb-page .amb-reveal-inner{overflow:hidden;min-height:0}
+.amb-page .amb-expand-button[aria-expanded=true]+.amb-reveal{grid-template-rows:1fr;opacity:1}
+.amb-page .amb-reveal-inner>:first-child{padding-top:21px}
+.amb-page .amb-reveal-inner h3,.amb-page .amb-article h3{font-size:18px;line-height:1.3;font-weight:700;margin:13px 0 9px;color:#2c3d35}
+.amb-page .amb-reveal-inner p{margin-bottom:17px}
+.amb-page .amb-levels{list-style:none;padding:0 0 12px 0;margin:0;width:min(590px,100%)}
+.amb-page .amb-levels li{display:flex;align-items:start;gap:11px;padding:7px 0}
+.amb-page .amb-levels li>span{display:grid;place-items:center;background:#e5f1df;color:#5b8866;border-radius:5px;width:32px;height:32px;flex:none;font:700 11px Roboto,Arial,sans-serif}
+.amb-page .amb-levels strong{display:block;color:#304338;font-size:13px;font-weight:700}
+.amb-page .amb-levels small{display:block;color:#74857a;font-size:11px}
+.amb-page .amb-bullets{list-style:disc;padding:0 0 0 26px;margin:15px 0 24px;color:#64796c;font-size:16px;line-height:1.58}
+.amb-page .amb-bullets li{margin:4px 0}
+.amb-page .amb-stats{display:flex;flex-direction:column;gap:16px;margin:27px 0 23px;width:210px}
+.amb-page .amb-stats>div{background:#e5f3df;min-height:53px;padding:10px 7px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#3e6553}
+.amb-page .amb-stats strong{font-size:12px}.amb-page .amb-stats span{font-size:13px;font-weight:700}
+.amb-page .amb-article .amb-demo-note{font-size:11px;color:#819087;margin:4px 0 8px}
+.amb-page .amb-article-strategy{margin-bottom:6px}
+.amb-page .amb-article-strategy h3{margin:24px 0 7px}
+.amb-page .amb-article-strategy p{margin-bottom:16px}
+.amb-page .amb-article-strategy>.amb-expand-button{margin-top:17px}
+.amb-page .amb-committee-title{font:700 32px/1.1 Roboto,Arial,sans-serif;color:#2f6d36;margin:12px 0 22px}
+.amb-page .amb-committee-table{border-collapse:separate;border-spacing:0;width:min(100%,940px);font-size:17px;line-height:1.35;margin:6px 0 10px;border:2px solid #2c2c2c;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.05)}
+.amb-page .amb-committee-table th{background:linear-gradient(180deg,#4b963f 0%,#4a8d40 100%);color:#fff;text-align:center;padding:16px 18px;font:700 18px/1.2 Roboto,Arial,sans-serif;border-right:2px solid #2c2c2c}
+.amb-page .amb-committee-table th:last-child{border-right:0}
+.amb-page .amb-committee-table td{padding:12px 18px;color:#1f1f1f;border-top:1.5px solid #2c2c2c;border-right:1.5px solid #2c2c2c;vertical-align:top;background:#fff}
+.amb-page .amb-committee-table td:last-child{border-right:0}
+.amb-page .amb-committee-table tbody tr:first-child td{border-top:1.5px solid #2c2c2c}
+.amb-page .amb-committee-table tbody td:first-child{width:34%;font-weight:500}
+.amb-page .amb-committee-table tbody td:last-child{width:66%}
+.amb-page .amb-downloads{background:#eaf1eb;padding:41px 0 43px}
+.amb-page .amb-download-list{display:flex;align-items:center;justify-content:space-between;gap:35px}
+.amb-page .amb-download{display:inline-flex;align-items:center;justify-content:space-between;gap:15px;min-height:64px;min-width:179px;padding:11px 13px;border:1.5px solid #416e9e;border-radius:23px;color:#416e9e;background:transparent;text-decoration:none;font:600 13px/1.25 Roboto,Arial,sans-serif;transition:transform .3s ease,opacity .3s ease,background-color .3s ease}
+.amb-page .amb-download:hover,.amb-page .amb-download:focus-visible{transform:scale(1.055);opacity:.84;background:#e0edf1}
+.amb-page .amb-download img{width:24px;height:24px;flex:none}
+.amb-page .amb-modal-overlay{position:fixed;inset:0;background:#10251bb3;z-index:300;display:flex;align-items:center;justify-content:center;padding:20px}
+.amb-page .amb-modal{background:#fff;width:min(490px,100%);padding:35px 36px 31px;border-radius:18px;box-shadow:0 20px 55px #111a1866;position:relative}
+.amb-page .amb-modal h2{font:700 25px/1.2 Roboto,Arial,sans-serif;color:#273c32;margin:0 0 14px}
+.amb-page .amb-modal p{font-size:15px;line-height:1.55;color:#4b6858;margin:0 0 15px}
+.amb-page .amb-modal .amb-modal-warning{background:#edf3e8;border-radius:5px;color:#6b7d70;font-size:12px;padding:10px;margin-bottom:20px}
+.amb-page .amb-modal-close{position:absolute;top:12px;right:16px;border:0;background:transparent;font-size:30px;color:#3c5546;line-height:1}
+.amb-page .amb-modal-contact{display:inline-flex;gap:12px;align-items:center;text-decoration:none;padding:11px 16px;background:#205448;color:#fff;border-radius:6px;font-size:13px;font-weight:500}
+.amb-page .amb-modal-contact:hover{opacity:.84}
+body.amb-modal-open{overflow:hidden}
+/* No se modifica la versión móvil en esta etapa. */
+@media(max-width:790px){.amb-page .amb-container{width:calc(100% - 38px)}.amb-page .amb-shortcuts{gap:12px}.amb-page .amb-shortcut{min-width:0;width:32%;font-size:14px;padding:12px}.amb-page .amb-download-list{flex-wrap:wrap;justify-content:center}}
+@media(prefers-reduced-motion:reduce){.amb-page .amb-reveal,.amb-page .amb-shortcut,.amb-page .amb-download,.amb-page .amb-expand-button svg{transition:none}}

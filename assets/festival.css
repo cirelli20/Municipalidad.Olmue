@@ -1,0 +1,63 @@
+/* Festival del Huaso · maqueta exclusivamente de escritorio.
+   El header/footer se montan desde el mismo shared-layout.js que usa todo el sitio. */
+.festival-page{background:#fff}
+/* Color rojo ceremonial propio de esta página; no altera el componente global. */
+.festival-page .utility-bar{background:#EA332F}
+.festival-breadcrumb{background:var(--soft)}
+.festival-breadcrumb-inner{min-height:55px;display:flex;align-items:center;gap:13px;font-size:12px;color:#5e7580}
+.festival-breadcrumb a{text-decoration:none;color:#46768b}
+.festival-breadcrumb a:hover{text-decoration:underline}
+.festival-breadcrumb img{height:14px;width:14px}
+.festival-breadcrumb [aria-current="page"]{color:var(--red)}
+.festival-hero{background:#ea5c58;color:white;padding:24px 0 69px}
+.festival-hero-grid{display:grid;grid-template-columns:minmax(0, .79fr) minmax(0,1.19fr);gap:44px;align-items:start}
+.festival-hero-copy{min-width:0}
+.festival-eyebrow{font-weight:700;font-size:11px;line-height:1.2;margin:0 0 20px}
+.festival-hero h1{font-size:49px;line-height:1.08;letter-spacing:-.6px;font-weight:700;color:white;margin:0 0 18px}
+.festival-hero-lead{font-size:21px;font-weight:400;line-height:1.45;max-width:435px;margin:0 0 23px}
+.festival-hero-description{font-size:14px;line-height:1.48;max-width:435px;margin:0 0 21px}
+.festival-documents{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.festival-doc{display:inline-flex;max-width:100%;align-items:center;min-height:28px;border-radius:99px;padding:7px 13px;text-decoration:none;box-shadow:0 3px 4px #6f2e234c;font-size:12px;font-weight:700;line-height:1.16;transition:background-color .15s,color .15s,transform .15s}
+.festival-doc:hover{transform:translateY(-1px)}
+.festival-doc-light{background:white;color:var(--blue);min-height:26px;font-size:11px;padding:5px 12px}
+.festival-doc-light:hover{background:#edf6ff;text-decoration:underline}
+.festival-doc-blue{background:#006FB3;color:#fff;min-height:42px;padding:9px 16px}
+.festival-doc-blue:hover{background:#8acb46;color:#fff}
+.festival-hero-photo{width:100%;margin:0;border-radius:18px;overflow:hidden;aspect-ratio:1.52/1;margin-top:27px}
+.festival-hero-photo img{width:100%;height:100%;object-fit:cover}
+.festival-links-section{padding:50px 0 26px;background:white}
+.festival-links-grid{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;justify-content:space-between;gap:28px}
+.festival-main-link{appearance:none;border:0;border-radius:100px;padding:0 22px;min-height:74px;display:inline-flex;gap:20px;justify-content:center;align-items:center;text-decoration:none;font:400 22px/1.1 Roboto,Arial,sans-serif;white-space:nowrap;text-align:center;cursor:pointer;transition:width .28s ease,background-color .15s,box-shadow .15s}
+.festival-main-link svg{width:25px;height:25px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.festival-main-red{justify-self:start;background:#db453a;color:white;width:251px;max-width:100%}
+.festival-main-red:hover,.festival-main-red:focus-visible{width:328px;background:#ed6357;box-shadow:0 6px 14px #bd413024}
+.festival-main-green{justify-self:center;border:5px solid #86c444;color:#81bc3c;background:white;min-width:271px;padding:8px 16px}
+.festival-main-green:hover{color:#fff;background:#86c444}
+.festival-main-blue{justify-self:end;background:#0879bd;color:#fff;width:303px;max-width:100%}
+.festival-main-blue:hover,.festival-main-blue:focus-visible{width:350px;background:#4d84bf;box-shadow:0 6px 14px #0b538525}
+.festival-related{background:white;padding:0 0 16px}
+.festival-related h2,.festival-gallery h2{font-size:29px;line-height:1.2;font-weight:700;margin:10px 0 38px;color:#EA332F}
+.festival-news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,303px));gap:24px;justify-content:space-between;padding:0 10px}
+.festival-news-card{display:flex;flex-direction:column;min-width:0;min-height:300px;background:white;border-radius:11px;overflow:hidden;box-shadow:4px 5px 7px #25322a42}
+.festival-news-card>img{width:100%;height:166px;object-fit:cover}
+.festival-news-card-content{padding:19px 20px 15px;display:flex;flex-direction:column;flex:1}
+.festival-news-card h3{font-size:18px;font-weight:700;line-height:1.33;margin:0 0 14px;color:var(--ink)}
+.festival-news-card a{display:flex;align-items:center;justify-content:space-between;gap:15px;border-top:1px solid #dfe6de;margin-top:auto;padding-top:12px;color:var(--blue);text-decoration:none;font-size:14px;font-weight:500}
+.festival-news-card a:hover,.festival-news-card a:focus-visible{color:var(--ink)}
+.festival-news-card a:hover span,.festival-news-card a:focus-visible span{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.festival-news-card a img{width:21px;height:21px;filter:invert(33%) sepia(86%) saturate(2045%) hue-rotate(169deg) brightness(91%)}
+.festival-news-card a:hover img{transform:translateX(3px)}
+.festival-more-news{display:flex;justify-content:flex-end;margin:52px 0 35px}
+.festival-more-news a{display:inline-flex;align-items:center;gap:25px;font-weight:500;font-size:18px;text-decoration:underline;text-underline-offset:4px}
+.festival-more-news a:hover{font-weight:700}
+.festival-more-news img{width:23px;height:23px}
+.festival-gallery{background:#fff;padding:0 0 24px}
+.festival-gallery h2{color:var(--blue);margin:0 0 12px}
+.festival-photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.festival-photo-grid img{width:100%;height:204px;object-fit:cover;border-radius:10px}
+.festival-facebook-link{display:inline-flex;align-items:center;justify-content:center;gap:12px;margin-top:43px;background:#dd453b;color:white;font-size:11px;font-weight:700;min-height:32px;padding:7px 12px;border-radius:100px;text-decoration:none;width:180px;max-width:100%;transition:width .28s ease,background-color .15s}
+.festival-facebook-link:hover,.festival-facebook-link:focus-visible{width:250px;background:#f05d51}
+.festival-facebook-link svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.festival-toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:400;background:#193e34;color:#fff;border-radius:9px;padding:13px 20px;box-shadow:0 6px 26px #0004;font:500 14px Roboto,Arial,sans-serif;max-width:90vw}
+@media(max-width:1050px){.festival-hero-grid{gap:27px;grid-template-columns:.85fr 1.1fr}.festival-hero h1{font-size:43px}.festival-main-link{font-size:17px;min-width:0;padding:0 17px}.festival-main-green{padding:8px 17px}.festival-news-card>img{height:150px}}
+/* Adaptación móvil pendiente a petición de la diseñadora. */

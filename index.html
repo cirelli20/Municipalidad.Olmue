@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#006FB3" name="theme-color"/>
+<meta content="Portal ciudadano de la Municipalidad de Olmué: trámites, noticias, servicios y contacto municipal." name="description"/>
+<title>Inicio · Municipalidad de Olmué</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/home.css" rel="stylesheet"/>
+<script defer="" src="assets/shared-layout.js"></script><script defer="" src="assets/home.js"></script>
+<link rel="stylesheet" href="assets/mobile.css">
+</head>
+<body id="inicio">
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+<div id="site-shell-header"></div>
+
+<main id="contenido">
+<section aria-label="Portal ciudadano y destacados" class="intro">
+<div class="intro-container">
+<div class="citizen-portal" id="portal">
+<span class="eyebrow">PORTAL CIUDADANO</span>
+<h1>Encuentra trámites, servicios y documentos de Olmué en un solo lugar.</h1>
+<form autocomplete="off" id="search-form" role="search">
+<label for="portal-search">¿Qué necesitas encontrar?</label>
+<div class="search-field">
+<img alt="" src="assets/icons/buscar.svg"/>
+<input aria-controls="search-results" aria-describedby="search-help" aria-expanded="false" id="portal-search" name="q" placeholder="Ej.: licencia de conducir" type="search"/>
+<button class="search-button" type="submit">Buscar <img alt="" src="assets/icons/buscar.svg"/></button>
+</div>
+</form>
+<p class="search-help" id="search-help">Busca por nombre de trámite, servicio o documento.</p>
+<div aria-label="Búsquedas sugeridas" class="keywords">
+<button data-search="Licencia" type="button">Licencias</button>
+<button data-search="Permiso" type="button">Permisos</button>
+<button data-search="Patentes" type="button">Patentes</button>
+<button data-search="Certificado" type="button">Certificados</button>
+<button data-search="Documentos" type="button">Documentos</button>
+<button data-search="Medio ambiente" type="button">Medio ambiente</button>
+<button data-search="Noticias" type="button">Noticias</button>
+<button data-search="Festival" type="button">Festival</button>
+</div>
+<div aria-live="polite" class="search-results" hidden="" id="search-results"></div>
+</div>
+<div aria-label="Actividades e información destacada de Olmué" aria-roledescription="carrusel" class="slider" role="region">
+<div class="slide-content">
+<img alt="Imagen destacada de Olmué, aniversario de la comuna" class="slide-image" id="slide-image" src="assets/images/galeria-festival.jpg"/>
+<span class="slide-caption" hidden="" id="slide-caption"></span>
+</div>
+<button aria-label="Imagen anterior" class="slider-arrow prev" id="slide-prev" type="button"><span aria-hidden="true">‹</span></button>
+<button aria-label="Imagen siguiente" class="slider-arrow next" id="slide-next" type="button"><span aria-hidden="true">›</span></button>
+</div>
+</div>
+</section>
+<section aria-labelledby="news-title" class="news-section container">
+<h2 class="section-heading" id="news-title">Noticias Destacadas</h2>
+<div class="news-grid">
+<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=0"><h3>¡Olmué tiene talento joven!</h3><img alt="Imagen provisoria de un edificio municipal" src="assets/images/noticia-municipio.jpg"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
+<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=1"><h3>CONCIERTO “Ensamble temporia”<br/>Por Orquesta infantil juvenil de la Cruz.</h3><img alt="Imagen provisoria de un edificio municipal" src="assets/images/noticia-municipio-1.jpg"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
+<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=2"><h3>¡Llega la tercera EXPO ECOFERIA reserva de la Biósfera Olmué 2026!”<br/></h3><img alt="Imagen provisoria de un edificio municipal" src="assets/images/noticia-municipio-2.jpg"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
+<article class="news-card"><a aria-label="Más información sobre el concierto Ensamble temporia" href="noticia.html?id=3"><h3>Se dan a conocer las bases del<br/> LVI festival del huaso de Olmué 2027</h3><img alt="Imagen provisoria de un edificio municipal" src="assets/images/noticia-municipio-3.jpg"/><span class="card-bottom"><span>Más información</span><img alt="" src="assets/icons/flecha-derecha.svg"/></span></a></article>
+</div>
+<a class="more-news" href="noticias.html"><span>Ver más noticias</span><img alt="" src="assets/icons/flecha-derecha.svg"/></a>
+</section>
+<section aria-labelledby="municipal-title" class="municipal-banner container">
+<div class="banner-details">
+<a class="banner-phone" href="tel:+56443579530">+56 44 357 9530</a>
+<h2 id="municipal-title">Información Municipalidad</h2>
+<div class="banner-facts">
+<p><img alt="" src="assets/icons/horario.svg"/><span>Lunes a Jueves de 08:30 a 17:30 y<br/>Viernes de 08:30 a 16:30</span></p>
+<p><img alt="" src="assets/icons/ubicacion.svg"/><span>Prat #12, Olmué, 5ta Región</span></p>
+</div>
+</div>
+<div class="banner-actions">
+<a href="https://www.portaltransparencia.cl/PortalPdT/pdtta?codOrganismo=MU190" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" target="_blank">Ley de Transparencia <svg aria-hidden="true" fill="none" focusable="false" viewbox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></a>
+<a href="municipalidad.html" rel="noopener noreferrer" target="_blank">Más información <svg aria-hidden="true" fill="none" focusable="false" viewbox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></a>
+</div>
+</section>
+<section aria-label="Accesos directos" class="shortcuts-section">
+<div class="container shortcuts-grid">
+<a class="shortcut" href="tramites.html?q=permiso"><img alt="" src="assets/icons/automovil.svg"/><span>Permisos</span></a>
+<a class="shortcut" href="tramites.html?tramite=patentes-comerciales"><img alt="" src="assets/icons/tienda.svg"/><span>Patentes</span></a>
+<a class="shortcut" href="tramites.html?tramite=certificado-informaciones-previas"><img alt="" src="assets/icons/documento.svg"/><span>Certificados</span></a>
+<a class="shortcut" href="tramites.html"><img alt="" src="assets/icons/tramites.svg"/><span>Trámites</span></a>
+<a class="shortcut" href="festival.html"><img alt="" src="assets/icons/festival.svg"/><span>Festival</span></a>
+<a class="shortcut" href="turismo.html"><img alt="" src="assets/icons/turismo.svg"/><span>Turismo</span></a>
+<a class="shortcut" href="medio-ambiente.html"><img alt="" src="assets/icons/medio-ambiente.svg"/><span>Medio<br/>ambiente</span></a>
+</div>
+</section>
+<section aria-labelledby="emergency-title" class="emergency-section">
+<div class="container">
+<h2 id="emergency-title">Números de emergencia</h2>
+<div class="emergency-grid">
+<div class="emergency-item"><img alt="" src="assets/icons/telefono.svg"/><h3>AMBULANCIA</h3><a href="tel:131">131</a><p>Emergencias · Chile</p></div>
+<div class="emergency-item"><img alt="" src="assets/icons/telefono.svg"/><h3>BOMBEROS</h3><a href="tel:132">132</a><p>Emergencias · Chile</p></div>
+<div class="emergency-item"><img alt="" src="assets/icons/telefono.svg"/><h3>CONAF</h3><a href="tel:130">130</a><p>Incendios forestales</p></div>
+<div class="emergency-item"><img alt="" src="assets/icons/telefono.svg"/><h3>CARABINEROS</h3><a href="tel:133">133</a><p>Emergencias · Chile</p></div>
+</div>
+</div>
+</section>
+</main>
+<div id="site-shell-footer"></div>
+</body>
+</html>

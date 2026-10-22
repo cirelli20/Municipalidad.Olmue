@@ -1,0 +1,37 @@
+[
+  {
+    "archivo": "festival.html",
+    "motivo": "Coincidir título de tarjeta con noticia de destino id 1",
+    "coincidencias": 1
+  },
+  {
+    "archivo": "festival.html",
+    "motivo": "Coincidir título de tarjeta con noticia de destino id 2",
+    "coincidencias": 1
+  },
+  {
+    "archivo": "festival.html",
+    "motivo": "Coincidir título de tarjeta con noticia de destino id 3",
+    "coincidencias": 1
+  },
+  {
+    "archivo": "assets/shared-layout.js",
+    "motivo": "Instagram municipal",
+    "coincidencias": 1
+  },
+  {
+    "archivo": "assets/shared-layout.js",
+    "motivo": "Facebook municipal",
+    "coincidencias": 1
+  },
+  {
+    "archivo": "assets/shared-layout.js",
+    "motivo": "X municipal",
+    "coincidencias": 1
+  },
+  {
+    "archivo": "contacto.html",
+    "motivo": "Ancla Consejo Municipal correcta",
+    "coincidencias": 1
+  }
+]

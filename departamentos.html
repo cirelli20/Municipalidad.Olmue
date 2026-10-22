@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Conoce las áreas de trabajo de la Municipalidad de Olmué y consulta sus funciones y temas de atención.">
+<title>Departamentos · Municipalidad de Olmué</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/home.css">
+<link rel="stylesheet" href="assets/departamentos.css">
+<link rel="stylesheet" href="assets/mobile.css">
+</head>
+<body class="dept-page" data-page="departamentos" id="inicio">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<div id="site-shell-header"></div>
+<main id="contenido">
+  <section class="dept-intro" aria-labelledby="dept-title">
+    <div class="dept-container">
+      <nav class="dept-breadcrumb" aria-label="Ruta de navegación">
+        <a href="index.html">Inicio</a><span aria-hidden="true">/</span>
+        <a href="municipalidad.html">La Municipalidad</a><span aria-hidden="true">/</span>
+        <span aria-current="page">Departamentos</span>
+      </nav>
+      <h1 id="dept-title">Departamentos</h1>
+      <p>Conoce las áreas de trabajo de la Municipalidad de Olmué y encuentra orientación para dirigir tu consulta.</p>
+    </div>
+  </section>
+  <section class="dept-directory" aria-labelledby="directory-title">
+    <div class="dept-container">
+      <span class="dept-eyebrow">DIRECTORIO MUNICIPAL</span>
+      <h2 id="directory-title">Encuentra el área que necesitas</h2>
+      <p class="dept-subtitle">Consulta una síntesis de funciones y los principales temas de atención de cada área.</p>
+      <div class="dept-tools">
+        <form class="dept-search" id="dept-search-form" role="search">
+          <img alt="" src="assets/icons/buscar.svg">
+          <label class="visually-hidden" for="dept-search-input">Buscar por área o tema</label>
+          <input id="dept-search-input" type="search" autocomplete="off" placeholder="Buscar por área o tema, ej.: reciclaje">
+          <button type="submit" class="dept-search-button">Buscar <img alt="" src="assets/icons/buscar.svg"></button>
+        </form>
+        <p id="dept-count" class="dept-count" aria-live="polite">Todas las áreas · 10 propuestas</p>
+      </div>
+      <div class="dept-card-rows" id="dept-card-rows" aria-label="Áreas municipales"></div>
+      <div class="dept-empty" id="dept-empty" hidden>
+        <h3>No encontramos resultados</h3>
+        <p>Prueba con el nombre de otra área o un tema distinto.</p>
+        <button type="button" id="dept-reset">Ver todas las áreas</button>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="site-shell-footer"></div>
+<script src="assets/shared-layout.js"></script>
+<script src="assets/departamentos-data.js"></script>
+<script src="assets/departamentos.js"></script>
+</body>
+</html>
