@@ -276,3 +276,52 @@
   .muni-red-button,.muni-red-button:is(:hover,:focus-visible) { width: 100%; max-width: 100%; white-space: normal; }
   .muni-account h2::after { width: 100%; }
 }
+
+/* Ajustes puntuales a partir de revisión en iPhone (22-10-2026). */
+@media (max-width: 760px) {
+  /* Los submenús no deben heredar el subrayado de escritorio ni superponer la línea divisoria al texto. */
+  .site-header .nav-links.mobile-open { align-items: stretch; }
+  .site-header .nav-links .nav-group { display: block; width: 100%; flex: 0 0 auto; }
+  .site-header .nav-links .nav-link,
+  .site-header .nav-links .nav-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    min-height: 54px;
+    margin: 0;
+    padding: 14px 0;
+    line-height: 1.35;
+    border: 0;
+    border-bottom: 1px solid rgba(255,255,255,.45);
+    text-decoration: none !important;
+    -webkit-text-decoration-line: none !important;
+    box-shadow: none;
+  }
+  .site-header .nav-links .nav-trigger:hover,
+  .site-header .nav-links .nav-trigger:focus-visible,
+  .site-header .nav-links .nav-trigger[aria-expanded="true"],
+  .site-header .nav-links .nav-link:hover { text-decoration: none !important; }
+  .site-header .nav-links .nav-trigger .nav-chevron { flex: none; margin-left: 12px; }
+
+  /* Separación entre Información Municipalidad y los accesos directos. */
+  .municipal-banner { margin-bottom: 25px; padding-bottom: 29px; }
+
+  /* Mantener entrada a 16px (evita el zoom automático de iOS) y reducir solo la muestra. */
+  #portal-search::placeholder,
+  #tramites-query::placeholder,
+  #docs-query::placeholder,
+  #dept-search-input::placeholder,
+  #news-query-input::placeholder {
+    font-size: 12px !important;
+    letter-spacing: -0.01em;
+  }
+}
+@media (max-width: 360px) {
+  #portal-search::placeholder,
+  #tramites-query::placeholder,
+  #docs-query::placeholder,
+  #dept-search-input::placeholder,
+  #news-query-input::placeholder { font-size: 11px !important; }
+}
