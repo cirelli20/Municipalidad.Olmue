@@ -1367,3 +1367,344 @@ body.amb-modal-open{overflow:hidden}
 .festival-page .festival-hero{background:#C93635}
 /* Keep keyboard focus visible against dark red areas and the green menu. */
 .festival-page :where(a,button):focus-visible{outline:3px solid #18382d;outline-offset:4px}
+
+
+/* ================================================================
+   TIPOGRAFÍA DE LECTURA — corregida 25-10-2026
+   - Contenidos informativos, fichas, formularios y acciones: >=16 px.
+   - Cabecera y pie compartidos: 14 px, exceptuando la marca Olmué.
+   - La fuente de entrada también permanece en 16 px para evitar
+     el zoom automático en Safari para iOS.
+   - :where() mantiene acotados los selectores. Se usa !important aquí
+     únicamente para prevalecer sobre los antiguos tamaños menores,
+     incluido el bloque responsive preexistente.
+   ================================================================ */
+body { font-size: 16px; }
+.site-header .utility-bar,
+.site-header .utility-bar strong,
+.site-header .utility-right a,
+.site-header .brand span,
+.site-header .nav-link,
+.site-header .nav-trigger,
+.site-header .nav-dropdown a { font-size: 14px !important; }
+.footer,
+.footer .footer-brand .brand span,
+.footer .footer-brand p,
+.footer .footer-column h2,
+.footer .footer-column>a,
+.footer .footer-column>p,
+.footer .footer-mayor a,
+.footer .mayor-row p,
+.footer .footer-bottom,
+.footer .footer-bottom a { font-size: 14px !important; }
+/* La marca conserva la jerarquía visual original. */
+.site-header .brand strong { font-size: 30px; }
+.footer .footer-brand .brand strong { font-size: 32px; }
+
+/* Elementos generales: elevar los textos secundarios de la maqueta a 16 px. */
+:where(
+  .eyebrow,
+  .citizen-portal form label,
+  .search-field input,
+  .search-button,
+  .search-help,
+  .keywords button,
+  .results-head,
+  .search-results a,
+  .card-bottom,
+  .banner-phone,
+  .banner-facts p,
+  .banner-actions a
+) { font-size: 16px !important; }
+:where(
+  .shortcut span,
+  .emergency-item p,
+  .citizen-portal h1,
+  .emergency-item h3
+) { font-size: 16px !important; }
+
+/* Contactos: elevar los textos secundarios de la maqueta a 16 px. */
+:where(
+  .contact-breadcrumb,
+  .contact-top-card>p:not(.contact-card-value),
+  .contact-top-card>p.schedule,
+  .emergency-stats span,
+  .emergency-place p,
+  .emergency-pill h3,
+  .emergency-pill a,
+  .directory-row p,
+  .directory-method p,
+  .directory-quicklinks a,
+  .directory-method a
+) { font-size: 16px !important; }
+
+/* Departamentos: elevar los textos secundarios de la maqueta a 16 px. */
+:where(
+  .dept-page .dept-breadcrumb,
+  .dept-page .dept-eyebrow,
+  .dept-page .dept-subtitle,
+  .dept-page .dept-search input,
+  .dept-page .dept-search-button,
+  .dept-page .dept-count,
+  .dept-page .dept-action,
+  .dept-page .dept-details,
+  .dept-page .dept-details h4,
+  .dept-page .dept-details .dept-note
+) { font-size: 16px !important; }
+
+/* Documentos: elevar los textos secundarios de la maqueta a 16 px. */
+:where(
+  .docs-page .docs-breadcrumb,
+  .docs-page .docs-eyebrow,
+  .docs-page .docs-form label,
+  .docs-page .docs-input-wrap input,
+  .docs-page .docs-search-button,
+  .docs-page .docs-disclaimer,
+  .docs-page #docs-count,
+  .docs-page .docs-cat,
+  .docs-page .docs-cat-number,
+  .docs-page .docs-download-info h3,
+  .docs-page .docs-download-info p,
+  .docs-page .docs-group-main p
+) { font-size: 16px !important; }
+:where(
+  .docs-page .docs-group-count,
+  .docs-page .docs-file-info h4,
+  .docs-page .docs-file-info p,
+  .docs-page .docs-file-format,
+  .docs-page .docs-download-button,
+  .docs-page .docs-results-foot,
+  .docs-page .docs-empty p,
+  .docs-page .docs-empty button,
+  .docs-page .docs-orient-head p,
+  .docs-page .docs-contact-link,
+  .docs-page .docs-contact-panel h3,
+  .docs-page .docs-contact-panel a
+) { font-size: 16px !important; }
+:where(
+  .docs-page .docs-contact-panel p
+) { font-size: 16px !important; }
+
+/* Festival: elevar los textos secundarios de la maqueta a 16 px. */
+:where(
+  .festival-breadcrumb-inner,
+  .festival-eyebrow,
+  .festival-hero-description,
+  .festival-doc,
+  .festival-doc-light,
+  .festival-news-card a,
+  .festival-facebook-link,
+  .festival-toast
+) { font-size: 16px !important; }
+
+/* Medio Ambiente: elevar los textos secundarios de la maqueta a 16 px. */
+:where(
+  .amb-page .amb-crumb,
+  .amb-page .amb-label,
+  .amb-page .amb-article p,
+  .amb-page .amb-expand-button,
+  .amb-page .amb-levels li>span,
+  .amb-page .amb-levels strong,
+  .amb-page .amb-levels small,
+  .amb-page .amb-stats strong,
+  .amb-page .amb-stats span,
+  .amb-page .amb-article .amb-demo-note,
+  .amb-page .amb-download,
+  .amb-page .amb-modal p
+) { font-size: 16px !important; }
+:where(
+  .amb-page .amb-modal .amb-modal-warning,
+  .amb-page .amb-modal-contact,
+  .amb-page .amb-shortcut,
+  .amb-page .amb-committee-table,
+  .amb-page .amb-committee-table th
+) { font-size: 16px !important; }
+
+/* Municipalidad: elevar los textos secundarios de la maqueta a 16 px. */
+:where(
+  .muni-page,
+  .muni-crumb,
+  .muni-person div,
+  .muni-person strong,
+  .muni-person span,
+  .muni-person small,
+  .muni-council-more button,
+  .muni-council-extra a,
+  .muni-council-extra,
+  .muni-discover>.container>p,
+  .muni-discover-card p,
+  .muni-card-link
+) { font-size: 16px !important; }
+:where(
+  .muni-red-button,
+  .muni-eyebrow,
+  .muni-transparency-left>p,
+  .muni-transparency-button,
+  .muni-small-links>a,
+  .muni-marga span,
+  .muni-marga strong,
+  .muni-marga small,
+  .muni-carabineros strong,
+  .muni-carabineros button,
+  .muni-public-docs strong,
+  .muni-public-docs small
+) { font-size: 16px !important; }
+:where(
+  .muni-contact-header p,
+  .muni-contact-header>a,
+  .muni-contact-strip strong,
+  .muni-contact-strip a,
+  .muni-contact-strip p,
+  .muni-organigrama,
+  .muni-org-foot,
+  .muni-notice,
+  .muni-intro-copy p
+) { font-size: 16px !important; }
+
+/* Noticias: elevar los textos secundarios de la maqueta a 16 px. */
+:where(
+  .news-card h3,
+  .news-breadcrumb .breadcrumb-inner,
+  .news-lead,
+  .news-query input,
+  .news-query-btn,
+  .news-filter-label,
+  .news-chips button,
+  .news-list-toolbar strong,
+  .news-list-toolbar p,
+  .news-sort,
+  .news-select-wrap select,
+  .news-card-topline
+) { font-size: 16px !important; }
+:where(
+  .news-card-date,
+  .news-card-action,
+  .news-pagination,
+  .news-pages-controls button,
+  .news-article-meta,
+  .news-article-pill,
+  .news-article-photo figcaption,
+  .news-article-callout,
+  .news-article-callout p,
+  .news-article-share,
+  .news-article-share h2,
+  .news-article-share a
+) { font-size: 16px !important; }
+:where(
+  .news-article-share button,
+  .news-article-share .share-origin,
+  .news-back-button,
+  .news-more-link,
+  .related-news-grid .news-card-date,
+  .related-news-grid .news-card-action,
+  .news-card-title,
+  .news-card .card-bottom
+) { font-size: 16px !important; }
+
+/* Trámites y Servicios: elevar los textos secundarios de la maqueta a 16 px. */
+:where(
+  .tramites-page .tramites-breadcrumb,
+  .tramites-page .tramites-prompt,
+  .tramites-page .tramites-search input,
+  .tramites-page .tramites-search button,
+  .tramites-page .tramites-search-note,
+  .tramites-page .tramites-directory .tramites-directory-intro,
+  .tramites-page .tramites-side-title,
+  .tramites-page .tramites-filter,
+  .tramites-page .tramites-filter-count,
+  .tramites-page .tramites-help h3,
+  .tramites-page .tramites-help p,
+  .tramites-page .tramites-help a
+) { font-size: 16px !important; }
+:where(
+  .tramites-page .tramites-results-count,
+  .tramites-page .tramite-tag,
+  .tramites-page .tramite-description,
+  .tramites-page .tramite-resumen,
+  .tramites-page .tramite-toggle,
+  .tramites-page .tramite-block h5,
+  .tramites-page .tramite-block ul,
+  .tramites-page .tramite-block ol,
+  .tramites-page .tramite-meta-item strong,
+  .tramites-page .tramite-meta-item span,
+  .tramites-page .tramite-actions a,
+  .tramites-page .tramites-empty
+) { font-size: 16px !important; }
+:where(
+  .tramites-page .tramites-warning,
+  .tramites-page .tramites-contact-label,
+  .tramites-page .tramites-contact p,
+  .tramites-page .tramites-contact-card strong,
+  .tramites-page .tramites-contact-card .tramites-contact-main,
+  .tramites-page .tramites-contact-card .tramites-contact-sub,
+  .tramites-page .tramite-card-heading .tramite-tag,
+  .tramites-page .tramite-information p,
+  .tramites-page .tramite-prepare,
+  .tramites-page .tramite-download,
+  .tramites-page .tramite-download small,
+  .tramites-page .tramite-provisional
+) { font-size: 16px !important; }
+
+/* Turismo: elevar los textos secundarios de la maqueta a 16 px. */
+:where(
+  .tour-main .tour-eyebrow,
+  .tour-main .tour-breadcrumb,
+  .tour-main .tour-hero-link,
+  .tour-main .tour-location,
+  .tour-main .tour-hero-visual figcaption,
+  .tour-main .tour-jumpbar-inner>span,
+  .tour-main .tour-jumpbar a,
+  .tour-main .tour-nature-feature-copy>p:not(.tour-eyebrow),
+  .tour-main .tour-note,
+  .tour-main .tour-tip p,
+  .tour-main .tour-culture-copy>p:not(.tour-eyebrow),
+  .tour-main .tour-culture-visual figcaption
+) { font-size: 16px !important; }
+:where(
+  .tour-main .tour-places-intro,
+  .tour-main .tour-place>span,
+  .tour-main .tour-place p,
+  .tour-main .tour-more,
+  .tour-main .tour-responsible-grid p,
+  .tour-main .tour-plan-intro>p:not(.tour-eyebrow),
+  .tour-main .tour-guidance strong,
+  .tour-main .tour-guidance p,
+  .tour-main .tour-faqs p
+) { font-size: 16px !important; }
+
+/* Enlace de descarga: el efecto hover de escritorio no debe quedar
+   "pegado" después de tocar el enlace en pantallas táctiles (Safari iOS).
+   La tecla Tab conserva su indicador de foco accesible. */
+@media (hover: none), (pointer: coarse) {
+  .tramites-page .tramite-download,
+  .tramites-page .tramite-download:hover,
+  .tramites-page .tramite-download:active,
+  .tramites-page .tramite-download:focus,
+  .tramites-page .tramite-download:focus-visible {
+    transform: none !important;
+    opacity: 1 !important;
+    background-color: #e2ede5 !important;
+    transition: background-color .18s ease;
+  }
+}
+
+/* Pantallas estrechas: permitir que los textos de 16 px se adapten,
+   sin ensanchar el documento ni cortar botones o rutas de navegación. */
+@media (max-width: 410px) {
+  .dept-page .dept-breadcrumb { flex-wrap: wrap; gap: 8px 10px; }
+  .dept-page .dept-breadcrumb > * { min-width: 0; }
+  .dept-page .dept-breadcrumb [aria-current="page"] { overflow-wrap: anywhere; }
+
+  .muni-page .muni-transparency-grid { grid-template-columns: minmax(0,1fr); }
+  .muni-page .muni-transparency-grid > * { min-width: 0; width: 100%; }
+  .muni-page .muni-collab-links { margin-left: 0; gap: 12px; }
+  .muni-page .muni-marga { min-width: 0; max-width: 100%; }
+  .muni-page .muni-marga small { white-space: normal; letter-spacing: normal; overflow-wrap: anywhere; }
+  .muni-page .muni-public-docs { min-width: 0; width: 100%; }
+  .muni-page .muni-public-docs a > * { min-width: 0; overflow-wrap: anywhere; }
+
+  .tour-main .tour-nature-feature,
+  .tour-main .tour-culture-intro { grid-template-columns: minmax(0,1fr); }
+  .tour-main .tour-nature-feature > *,
+  .tour-main .tour-culture-intro > * { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
+}
